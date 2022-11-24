@@ -10,8 +10,8 @@ React to button click
 ------------------------
 
 In the starter code you find an index.html file. Create a script file that adds an event listener to the button with
-the Text 'I understand'. Upon clicking the button your script should print 'So cool I just reacted to click event' to
-console.
+the Text 'I understand'. Upon clicking the button your script should print 'So cool I just reacted to a click event' 
+to the console.
 
 Stadion speaker
 ------------------
@@ -34,14 +34,16 @@ the mouse is printed to the console.
 Let's go to the Zoo
 -------------------
 
-Add a event listener to all the buttons in the Let's go to the Zoo section. Upon clicking the button the animal that you saw is printed to the console. Moreover to we ask you to do it with only one event listener for all the buttons.
+Add a event listener to all the buttons in the Let's go to the Zoo section. Upon clicking the button the animal that
+you saw is printed to the console. Moreover to we ask you to do it with only one event listener for all the buttons.
 This means you have to find out inside of the event listener what button was clicked.
 
 
 Increase, decrease
 ------------------
 
-Create a counter that starts at zero. Every time the user clicks the `Increase the counter` button the counter is increased by one and the new value of the counter is printed to the console. Similarly the counter is decreased
+Create a counter that starts at zero. Every time the user clicks the `Increase the counter` button the counter is 
+increased by one and the new value of the counter is printed to the console. Similarly the counter is decreased
 by one if the user clicks on the `Decrease the counter` button and the new value of the counter is printed on the
 console.
 
