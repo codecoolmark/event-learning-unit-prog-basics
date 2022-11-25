@@ -13,6 +13,20 @@ In the starter code you find an index.html file. Create a script file that adds 
 the Text 'I understand'. Upon clicking the button your script should print 'So cool I just reacted to a click event' 
 to the console.
 
+
+In order to add a event listener to a HTML element we retrieve it from the HTML page using functions like `document.getElementById` or `document.querySelector`.
+
+```
+const myButton = document.getElementById('my-button');
+```
+
+Once we have the element we can use the `addEventListener` function to register a function that is called once the user clicks on a button:
+```
+myButton.addEventListener('click', function() {
+    console.log('myButton was clicked!');
+});
+```
+
 Stadion speaker
 ------------------
 
@@ -27,16 +41,36 @@ This means if the `Goal for Hungary` button is pressed `Hungary scored a goal!` 
 Locate the mouse
 ----------------
 
-Add a event listener to the button that says `Tell me where my mouse is` upon clicking the button the exact location of
-the mouse is printed to the console.
+Add a event listener to the button that says `Tell me where my mouse is`. Upon clicking the button the exact location of the mouse is printed to the console.
+
+The function that we register as a event listener can also receive a parameter that contains informations about the event. Usually we call this parameter `e` or `event`.
+
+```
+myButton.addEventListener('click', function(event) {
+    console.log('myButton was clicked!');
+    // here we log the event parameter
+    console.log(event);
+});
+```
+
+You can use this parameter to find out all exact location of the mouse on the screen when the user clicked on the button.
 
 
 Let's go to the Zoo
 -------------------
 
 Add a event listener to all the buttons in the Let's go to the Zoo section. Upon clicking the button the animal that
-you saw is printed to the console. Moreover to we ask you to do it with only one event listener for all the buttons.
+you saw is printed to the console. Moreover we ask you to do it with only one event listener for all the buttons.
 This means you have to find out inside of the event listener what button was clicked.
+
+The event parameter of our event listener contains a property called `target` that can be used to retrieve the exact HTML element the user clicked on. 
+```
+myButton.addEventListener('click', function(event) {
+    console.log('myButton was clicked!');
+    // here we log the event parameter
+    console.log(event);
+});
+```
 
 
 Increase, decrease
