@@ -7,7 +7,7 @@ In Javascript we can react to these events using so called event listeners. In t
 listeners together.
 
 React to button click
-------------------------
+---------------------
 
 In the starter code you find an index.html file. Create a script file that adds an event listener to the button with
 the Text 'I understand'. Upon clicking the button your script should print 'So cool I just reacted to a click event' 
